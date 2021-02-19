@@ -16,3 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/director/index', 'DirectorController@index');
+Route::get('/director/create', 'DirectorController@create');
+Route::post('/director/store', 'DirectorController@store');
+
+Route::get('/director/{id}/edit', 'DirectorController@edit');
+
+
+Route::put('/director/{id}', 'DirectorController@update');
+
+
+
+
+

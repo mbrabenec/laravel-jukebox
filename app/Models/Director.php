@@ -13,4 +13,9 @@ class Director extends Model
     {
         return $this->hasMany(Movie::class);
     }
+
+    public function genres()
+    {
+        return $this->belongsTo(Genre::class);
+    }
 }
